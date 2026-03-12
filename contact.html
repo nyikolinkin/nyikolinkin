@@ -3,83 +3,113 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Nyiko</title>
+
+<title>Contact Nyiko Mathebula</title>
+
+<link href="https://fonts.cdnfonts.com/css/rustic-roadway-personal-use" rel="stylesheet">
 
 <style>
+
+*{
+box-sizing:border-box;
+}
+
 body{
-  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
-  background: linear-gradient(135deg,#e0f7e9 0%,#f4f4f4 50%,#e8f5e9 100%);
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  min-height:100vh;
-  margin:0;
+font-family:'Segoe UI', Arial, Helvetica, sans-serif;
+background: linear-gradient(135deg,#e0f7e9 0%,#f4f4f4 50%,#e8f5e9 100%);
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+margin:0;
+padding:20px;
 }
 
 .contact-card{
-  background:white;
-  padding:40px;
-  border-radius:24px;
-  width:90%;
-  max-width:900px;
-  box-shadow:0 12px 40px rgba(0,0,0,0.08);
+background:white;
+padding:40px;
+border-radius:24px;
+width:100%;
+max-width:950px;
+box-shadow:0 12px 40px rgba(0,0,0,0.08);
+}
+
+/* Apply Rustic font to ALL headings */
+h1,h2,h3,h4,h5,h6{
+font-family:'Rustic Roadway - Personal use', cursive;
+color:#2d5e3f;
+margin-top:0;
 }
 
 .contact-container{
-  display:flex;
-  align-items:center;
-  gap:40px;
+display:flex;
+align-items:flex-start;
+gap:40px;
+flex-wrap:wrap;
 }
 
-.profile-img{
-  width:260px;
-  height:260px;
-  border-radius:50%;
-  object-fit:cover;
-  border:6px solid #2ecc71;
-  box-shadow:0 4px 20px rgba(0,0,0,0.15);
+.profile{
+text-align:center;
+}
+
+.profile img{
+width:260px;
+height:260px;
+border-radius:50%;
+object-fit:cover;
+border:6px solid #2ecc71;
+box-shadow:0 4px 20px rgba(0,0,0,0.15);
+}
+
+.details{
+margin-top:15px;
+font-size:15px;
+color:#444;
+line-height:1.6;
 }
 
 .contact-form{
-  flex:1;
-}
-
-.contact-form h2{
-  margin-top:0;
-  color:#2d5e3f;
+flex:1;
 }
 
 input, textarea{
-  width:100%;
-  padding:12px;
-  margin-top:10px;
-  border-radius:10px;
-  border:1px solid #ddd;
-  font-size:14px;
+width:100%;
+padding:12px;
+margin-top:10px;
+border-radius:10px;
+border:1px solid #ddd;
+font-size:14px;
 }
 
 button{
-  margin-top:14px;
-  padding:12px 20px;
-  border:none;
-  background:#2ecc71;
-  color:white;
-  border-radius:10px;
-  font-weight:600;
-  cursor:pointer;
+margin-top:14px;
+padding:12px 20px;
+border:none;
+background:#2ecc71;
+color:white;
+border-radius:10px;
+font-weight:600;
+cursor:pointer;
 }
 
 button:hover{
-  background:#27ae60;
+background:#27ae60;
+}
+
+.map{
+margin-top:25px;
+border-radius:14px;
+overflow:hidden;
 }
 
 .back{
-  display:inline-block;
-  margin-top:20px;
-  text-decoration:none;
-  color:#27ae60;
-  font-weight:600;
+display:inline-block;
+margin-top:20px;
+text-decoration:none;
+color:#27ae60;
+font-weight:600;
 }
+
 </style>
 </head>
 
@@ -87,22 +117,56 @@ button:hover{
 
 <div class="contact-card">
 
+<h1>Contact Me</h1>
+
 <div class="contact-container">
 
-<img src="me.jpeg" class="profile-img">
+<div class="profile">
+
+<img src="me.jpeg" alt="Nyiko Mathebula">
+
+<div class="details">
+
+<strong>Address</strong><br>
+74 Teabush Street<br>
+Bakerton, Springs<br>
+Gauteng<br><br>
+
+<strong>Cell</strong><br>
+066 112 5148
+
+</div>
+
+</div>
 
 <div class="contact-form">
 
-<h2>Contact Me</h2>
+<h2>Send a Message</h2>
 
 <form>
+
 <input type="text" placeholder="Your Name" required>
+
 <input type="email" placeholder="Your Email" required>
+
 <textarea rows="5" placeholder="Your Message"></textarea>
+
 <button type="submit">Send Message</button>
+
 </form>
 
-<a class="back" href="index.html">← Back to links</a>
+<div class="map">
+
+<iframe
+src="https://maps.google.com/maps?q=74%20Teabush%20Street%20Bakerton%20Springs&t=&z=15&ie=UTF8&iwloc=&output=embed"
+width="100%"
+height="250"
+style="border:0;">
+</iframe>
+
+</div>
+
+<a class="back" href="index.html">← Back to my links</a>
 
 </div>
 
